@@ -1,2 +1,2 @@
 # This is my current test inventory
-yogeshworker ansible_connection=ssh ansible_user=root
+yogeshworker ansible_connection=ssh ansible_user=root ansible_ssh_pass=thinknyx@123
