@@ -1,0 +1,20 @@
+---
+- name: This playbook is for Webserver setup
+  hosts: "yogeshworker"
+
+  tasks:
+    - name: Installing Apache application
+      yum: 
+        name: httpd
+        state: present
+
+    - name: Configuring web page
+      copy:
+        dest: /var/www/html/index.html
+        content: "<h1>This page has been created bu Jenkins CI and CD pipeline</h1>"
+
+    - name: Starting Apache application
+      service: 
+        name: httpd
+        state: started
+        enabled: yes
