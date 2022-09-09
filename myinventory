@@ -1,2 +1,2 @@
 # This is my current test inventory
-yogeshworker
+yogeshworker ansible_connection=ssh ansible_user=root
