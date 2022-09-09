@@ -14,7 +14,7 @@
     - name: Configuring web page
       copy:
         dest: /var/www/html/index.html
-        content: "<h1>This page has been created bu Jenkins CI and CD pipeline</h1>"
+        content: "<h1>This page has been created by Jenkins CI and CD pipeline and we did lots of tweaks to get this worked</h1>"
 
     - name: Starting Apache application
       service: 
